@@ -10,6 +10,7 @@ pipeline {
        stage("test") {
           steps{
             echo 'testing the application'
+            robot Test-002.robot
           }
         }
        stage("deploy") {
