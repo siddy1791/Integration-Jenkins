@@ -5,8 +5,10 @@ Library     SeleniumLibrary
 Integration Test 001
     [Documentation]     This is just a test for integration
     [Tags]      Sanity
-    Open Browser    url=http://www.google.com     browser=chrome    executable_path=pythonProject//dependencies//chromedriver.exe
+    Create Webdriver    Chrome      executable_path=dependencies/chromedriver.exe
+    Go To    http://www.google.com
     Set Selenium Speed    3
+
 
 
 
