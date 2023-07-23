@@ -12,7 +12,7 @@ pipeline {
           steps{
             echo 'building the application'
             echo "${path}"
-            echo "$(pwd)"
+            echo "${pwd}"
             sh '''
             pip install robotframework
             pip install robotframework-seleniumlibrary
