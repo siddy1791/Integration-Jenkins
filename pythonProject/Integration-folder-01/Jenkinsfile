@@ -13,7 +13,7 @@ pipeline {
             echo 'building the application'
             sh '''
             pip install robotframework
-            pip install robotframework-selenumlibrary
+            pip install robotframework-seleniumlibrary
             '''
             }
         }
