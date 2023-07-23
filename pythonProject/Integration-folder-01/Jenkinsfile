@@ -11,16 +11,20 @@ pipeline {
         stage("build") {
           steps{
             echo 'building the application'
+            sh '''
             pip install robotframework
             pip install robotframework-selenumlibrary
+            '''
             }
         }
        stage("test") {
           steps{
             echo 'testing the application'
+            sh '''
             cd pythonProject/Integration-folder-01
             python3 Test-001.py
             robot Test-002.robot
+            '''
             
           }
         }
