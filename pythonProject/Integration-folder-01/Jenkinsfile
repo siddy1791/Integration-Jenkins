@@ -23,9 +23,11 @@ pipeline {
             sh '''
             cd pythonProject/Integration-folder-01
             python3 Test-001.py
-            robot Test-002.robot
             '''
-            
+            sh '''
+            cd pythonProject/Integration-folder-01
+            python -m robot Test-002.robot 
+            '''
           }
         }
        stage("deploy") {
