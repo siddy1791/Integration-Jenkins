@@ -11,7 +11,8 @@ pipeline {
         stage("build") {
           steps{
             echo 'building the application'
-            echo '${path}'
+            echo "${path}"
+            echo "$(pwd)"
             sh '''
             pip install robotframework
             pip install robotframework-seleniumlibrary
