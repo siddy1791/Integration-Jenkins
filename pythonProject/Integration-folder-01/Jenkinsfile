@@ -15,7 +15,8 @@ pipeline {
             
             sh '''
             pip install robotframework
-
+            pip install robotframework-seleniumlibrary
+            pip install selenium==4.9.1
             '''
             }
         }
